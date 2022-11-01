@@ -1,0 +1,16 @@
+main {
+  margin: 3rem auto;
+  max-width: 90vw;
+  width: 50ch;
+  background-color: lightblue;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+.hero{
+  background-color: gray;
+}
