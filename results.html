@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="english">
+    <head>
+        <title>Mini-Project</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    </head>
+    <body>
+
+    <div class="jumbotron bg-dark text-light p-5 d-flex justify-content-center">
+        <div class="row">
+            <h1 class="col-md-12 display-4 d-flex justify-content-center">Search the Library of Congress</h1><br>
+            <h2 class="col-md-12 d-flex justify-content-center">Results page</h2>
+        </div>
+    </div>
+
+    <div class="row p-5">
+        <div class="col-md-3">
+            <div class="card">
+                <h5 class="card-header bg-dark text-light">Search</h5>
+                <div class="card-body">
+                    <form>
+                        <input type="text" class="form-control my-1" id="query"></input>
+                        Media type:
+                        <select class="form-control my-1" id="format">
+                            <option>All</option>
+
+                        </select>
+
+                        <button type="button" class="btn btn-primary" id="search-btn">
+                        Search
+                        </button> 
+                        <button type="button" class="btn btn-secondary" id="back-btn">
+                        Go back</button>
+
+                    </form>
+                      
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <table class="table table-striped" id="project_table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Subject</th>
+                        <th scope="col">Read More</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+</HTML>
